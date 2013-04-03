@@ -1,4 +1,4 @@
-[animat.io](http://returnfalse.org/plugins/animatio) - jQuery CSS3 Animations Plugin
+[animat.io](http://animatio.herokuapp.com) - jQuery CSS3 Animations Plugin
 ==================================================
 
 Developed by [@dysfunc](http://github.com/dysfunc/) and [@sheniff](http://github.com/sheniff)
