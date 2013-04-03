@@ -676,3 +676,5 @@
       window.setTimeout(fn, 1000 / 60);
     };
   })();
+  
+})(window, jQuery);
