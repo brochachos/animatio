@@ -366,7 +366,7 @@
             }else{
               value = config[property];
             }
-            //
+            // set property value
             css[property] = value;
             // push property to transition properties collection
             cssTransitions.push(property);
