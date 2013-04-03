@@ -11,4 +11,4 @@ We would like to thank [@daneden](http://github.com/daneden) for his awesome wor
 Documentation
 --------------------------------------
 
-For a complete overview of how animat.io works visit [http://animation.herokuapp.com](http://animation.herokuapp.com).
+For a complete overview of how animat.io works visit [http://animatio.herokuapp.com](http://animatio.herokuapp.com).
