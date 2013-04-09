@@ -14,12 +14,12 @@
  * @author    Sergio Almecija (github.com/sheniff)
  *
  * @copyright 2012, 2013 Kieran Boyle and Sergio Almecija
- * @license   github.com/dysfunc/animatio/license.txt
+ * @license   github.com/brochachos/animatio/license.txt
  * @version   1.0
- * @link      github.com/dysfunc/animatio
+ * @link      github.com/brochachos/animatio
  */
-
- (function(window, $){
+ 
+(function(window, $){
   "use strict";
 
   /*------------------------------------
@@ -117,8 +117,10 @@
       supportsTouch = ('ontouchstart' in window),
       // CSS transforms
       transforms = /^((perspective|rotate|scale|skew|translate)(X|Y|Z|3d)?|matrix(3d)?)$/i,
-      // transition end map
-      animationEnd = { webkit: 'webkitTransitionEnd', moz: 'transitionend', o: 'oTransitionEnd', ms: 'transitionend' },
+      // transitionEnd map
+      transitionEnd = { webkit: 'webkitTransitionEnd', moz: 'transitionend', o: 'oTransitionEnd',  ms: 'transitionend' },
+      // animationEnd map
+      animationEnd = { webkit: 'webkitAnimationEnd', moz: 'animationend', o: 'oAnimationEnd',  ms: 'animationend' },
       /**
        * Determines if we've already created our inline style block to store our animation rules in
        * @return {Boolean} Always returns the value of true
@@ -249,7 +251,8 @@
       this.config = config;
       // make sure we have our style block ready
       createStyle();
-      // setup callback method
+      
+      // setup callback method after animationEnd
       element.one(animationEnd[cleaned], function(e){
         if(!config.bubbles)
           e.stopPropagation();
@@ -386,8 +389,8 @@
         return typeof(e) !== 'undefined' && e.target !== e.originalTarget ? false : $(e.target).unbind('.transform');
       };
 
-      // bind to animation end
-      element.on(animationEnd[cleaned] + '.transform', fn);
+      // bind to transitionEnd
+      element.on(transitionEnd[cleaned] + '.transform', fn);
 
       sleep = setTimeout(function(){
         // reset CSS transitions
