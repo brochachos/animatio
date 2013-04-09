@@ -242,7 +242,6 @@
     run: function(type, config, target, fn){
       var element = $(target),
           animation = null,
-          animationEnd = { webkit: 'webkitAnimationEnd', moz: 'animationend', o: 'oAnimationEnd', ms: 'animationend' },
           prev = element.css(prefix + 'animation-name'),
           css = {};
 
