@@ -336,10 +336,10 @@
     /**
      * Apply animation to one or more elements in a matched set
      * @param  {Object}   element  The jQuery object
-     * @param  {[type]}   config   The key + value pairs of properties to animate
-     * @param  {[type]}   duration The duration of the animation (optional)
-     * @param  {[type]}   delay    The time to wait before executing the animation (optional)
-     * @param  {[type]}   easing   The animation timing function type (optional)
+     * @param  {Object}   config   The key + value pairs of properties to animate
+     * @param  {Mixed}    duration The duration of the animation (optional)
+     * @param  {Mixed}    delay    The time to wait before executing the animation (optional)
+     * @param  {String}   easing   The animation timing function type (optional)
      * @param  {Function} callback The callback method to execute on animation end (optional)
      */
     run: function(element, config, duration, delay, easing, callback){
