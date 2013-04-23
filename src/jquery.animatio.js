@@ -273,7 +273,7 @@
           element.css(prefix + 'animation', 'none');
 
           setTimeout(function(){
-            css[prefix + 'animation-name'] = animation;
+            element.css(prefix + 'animation-name', animation);
           }, 10);
         }else{
           css[prefix + 'animation-name'] = animation;
