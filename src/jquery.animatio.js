@@ -14,7 +14,7 @@
  * @author    Sergio Almecija (github.com/sheniff)
  *
  * @copyright 2012, 2013 Kieran Boyle and Sergio Almecija
- * @license   github.com/brochachos/animatio/license.txt
+ * @license   raw.github.com/brochachos/animatio/master/license.txt
  * @version   1.0
  * @link      github.com/brochachos/animatio
  */
